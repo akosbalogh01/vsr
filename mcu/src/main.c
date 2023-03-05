@@ -11,10 +11,18 @@
 
 #include "stm32f4xx.h"
 #include "stm32f4xx_nucleo.h"
-			
+
+#include "global.h"
 
 int main(void)
 {
+	init_hardware();
+	uartrx = 0;
 
-	for(;;);
+	while (1) {
+		HAL_UART_Receive_IT(&huart, uartbuf, UART_BUFSIZE);
+		if (uartrx) {
+			leds_tx();
+		}
+	}
 }
