@@ -26,9 +26,7 @@ const uint8_t gamma[] = {
   177,180,182,184,186,189,191,193,196,198,200,203,205,208,210,213,
   215,218,220,223,225,228,231,233,236,239,241,244,247,249,252,255
 };
-/*
-uint8_t tempbuf[LED_TXSIZE];
-*/
+
 void leds_tx() {
 	int i, j;
 	memset(txbuf, LED_MASK_0, LED_TXSIZE);
@@ -40,15 +38,10 @@ void leds_tx() {
 			txbuf[(LEDCOUNT*3*8) + (i*8 + j)] = (((temp << j) & (0x80)) == 0x80) ? (LED_MASK_1) : (LED_MASK_0);
 		}
 	}
-/*
-	unsigned char asd[24];
-	memset(asd, LED_MASK_1, 24);
-*/
+
 	for (i = 0; i < LEDCOUNT; i++) {
 		memcpy(txbuf + i*24, txbuf + (LED_TXSIZE-1) - (i+1)*24, 24);
 	}
-
-	// txbuf[(LEDCOUNT*3*8) + (i*8 + j)] = (((temp << j) & (0x80)) == 0x80) ? (LED_MASK_1) : (LED_MASK_0);
 
 	HAL_SPI_Transmit(&hspi, txbuf, LED_TXSIZE, HAL_MAX_DELAY);
 

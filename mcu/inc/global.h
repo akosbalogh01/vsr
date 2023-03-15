@@ -16,5 +16,6 @@ void init_uart();
 void init_spi();
 
 void leds_tx();
+void leds_test(uint8_t);
 
 #endif
