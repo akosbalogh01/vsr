@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="host" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/vsd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="settings.ini xml/Demo.xml" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-network-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="ws2_32" />
+					<Add library="tag" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/vsr" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="settings.ini xml/Demo.xml" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-O3" />
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-network-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="ws2_32" />
+					<Add library="tag" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++1y" />
+			<Add option="-DSFML_STATIC" />
+			<Add option="-DTAGLIB_STATIC" />
+			<Add directory="inc" />
+		</Compiler>
+		<Linker>
+			<Add directory="C:/MSYS64/mingw64/lib" />
+		</Linker>
+		<Unit filename="inc/bar.hpp" />
+		<Unit filename="inc/consts.hpp" />
+		<Unit filename="inc/fft/fft.hpp" />
+		<Unit filename="inc/fft/wdata.dat" />
+		<Unit filename="inc/fft/wridx.dat" />
+		<Unit filename="inc/graphics.hpp" />
+		<Unit filename="inc/ini/inifile.hpp" />
+		<Unit filename="inc/ini/key.hpp" />
+		<Unit filename="inc/ini/section.hpp" />
+		<Unit filename="inc/logic.hpp" />
+		<Unit filename="inc/man/audio.hpp" />
+		<Unit filename="inc/man/bars.hpp" />
+		<Unit filename="inc/man/debug.hpp" />
+		<Unit filename="inc/man/event.hpp" />
+		<Unit filename="inc/man/flow.hpp" />
+		<Unit filename="inc/man/playlist.hpp" />
+		<Unit filename="inc/man/serial.hpp" />
+		<Unit filename="inc/man/settings.hpp" />
+		<Unit filename="inc/man/visualiser.hpp" />
+		<Unit filename="inc/man/window.hpp" />
+		<Unit filename="inc/metadata.hpp" />
+		<Unit filename="inc/music.hpp" />
+		<Unit filename="inc/parents.hpp" />
+		<Unit filename="inc/point.hpp" />
+		<Unit filename="inc/vis/fourier.hpp" />
+		<Unit filename="inc/vis/glow.hpp" />
+		<Unit filename="inc/xml/rapidxml.hpp" />
+		<Unit filename="inc/xml/rapidxml_iterators.hpp" />
+		<Unit filename="inc/xml/rapidxml_print.hpp" />
+		<Unit filename="inc/xml/rapidxml_utils.hpp" />
+		<Unit filename="src/audio/meta/constructor.cpp" />
+		<Unit filename="src/audio/meta/metadata.cpp" />
+		<Unit filename="src/audio/music/brightness.cpp" />
+		<Unit filename="src/audio/music/constructor.cpp" />
+		<Unit filename="src/audio/music/meta.cpp" />
+		<Unit filename="src/audio/music/music.cpp" />
+		<Unit filename="src/audio/music/samples.cpp" />
+		<Unit filename="src/audio/music/update.cpp" />
+		<Unit filename="src/audio/music/volume.cpp" />
+		<Unit filename="src/graphics/bar/bar.cpp" />
+		<Unit filename="src/graphics/bar/constructor.cpp" />
+		<Unit filename="src/graphics/gui/constructor.cpp" />
+		<Unit filename="src/graphics/gui/graphics.cpp" />
+		<Unit filename="src/graphics/gui/internal.cpp" />
+		<Unit filename="src/graphics/gui/render.cpp" />
+		<Unit filename="src/graphics/vis/fourier/binheight.cpp" />
+		<Unit filename="src/graphics/vis/fourier/constructor.cpp" />
+		<Unit filename="src/graphics/vis/fourier/leds.cpp" />
+		<Unit filename="src/graphics/vis/fourier/render.cpp" />
+		<Unit filename="src/graphics/vis/fourier/update.cpp" />
+		<Unit filename="src/graphics/vis/glow/constructor.cpp" />
+		<Unit filename="src/graphics/vis/glow/leds.cpp" />
+		<Unit filename="src/graphics/vis/glow/render.cpp" />
+		<Unit filename="src/graphics/vis/glow/update.cpp" />
+		<Unit filename="src/logic/constructor.cpp" />
+		<Unit filename="src/logic/fft/fft.cpp" />
+		<Unit filename="src/logic/fft/warp.cpp" />
+		<Unit filename="src/logic/fft/window.cpp" />
+		<Unit filename="src/logic/ini/inifile.cpp" />
+		<Unit filename="src/logic/ini/key.cpp" />
+		<Unit filename="src/logic/ini/load.cpp" />
+		<Unit filename="src/logic/ini/save.cpp" />
+		<Unit filename="src/logic/ini/section.cpp" />
+		<Unit filename="src/logic/ini/value.cpp" />
+		<Unit filename="src/logic/logic.cpp" />
+		<Unit filename="src/logic/point/constructor.cpp" />
+		<Unit filename="src/logic/point/point.cpp" />
+		<Unit filename="src/logic/update.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/man/audio/audio.cpp" />
+		<Unit filename="src/man/audio/constructor.cpp" />
+		<Unit filename="src/man/audio/events.cpp" />
+		<Unit filename="src/man/bar/constructor.cpp" />
+		<Unit filename="src/man/bar/operator.cpp" />
+		<Unit filename="src/man/bar/render.cpp" />
+		<Unit filename="src/man/debug/constructor.cpp" />
+		<Unit filename="src/man/debug/debug.cpp" />
+		<Unit filename="src/man/debug/events.cpp" />
+		<Unit filename="src/man/debug/render.cpp" />
+		<Unit filename="src/man/event/events.cpp" />
+		<Unit filename="src/man/flow/brightness.cpp" />
+		<Unit filename="src/man/flow/color.cpp" />
+		<Unit filename="src/man/flow/constructor.cpp" />
+		<Unit filename="src/man/flow/lambda.cpp" />
+		<Unit filename="src/man/flow/update.cpp" />
+		<Unit filename="src/man/flow/volume.cpp" />
+		<Unit filename="src/man/playlist/constructor.cpp" />
+		<Unit filename="src/man/playlist/next.cpp" />
+		<Unit filename="src/man/playlist/playlist.cpp" />
+		<Unit filename="src/man/playlist/prev.cpp" />
+		<Unit filename="src/man/serial/constructor.cpp" />
+		<Unit filename="src/man/serial/events.cpp" />
+		<Unit filename="src/man/serial/serial.cpp" />
+		<Unit filename="src/man/settings/constructor.cpp" />
+		<Unit filename="src/man/settings/map.cpp" />
+		<Unit filename="src/man/visualiser/constructor.cpp" />
+		<Unit filename="src/man/visualiser/events.cpp" />
+		<Unit filename="src/man/visualiser/render.cpp" />
+		<Unit filename="src/man/visualiser/update.cpp" />
+		<Unit filename="src/man/visualiser/visualiser.cpp" />
+		<Unit filename="src/man/window/constructor.cpp" />
+		<Unit filename="src/man/window/events.cpp" />
+		<Unit filename="src/man/window/render.cpp" />
+		<Unit filename="src/man/window/window.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

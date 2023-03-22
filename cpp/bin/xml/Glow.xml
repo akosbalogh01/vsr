@@ -1,0 +1,6 @@
+<Visualisation name="Glow">
+  <ControlPoint timestamp="0" volume="100" brightness="100">
+    <bin index="0" color="Color"></bin>
+    <bin index="119" color="Color"></bin>
+  </ControlPoint>
+</Visualisation>

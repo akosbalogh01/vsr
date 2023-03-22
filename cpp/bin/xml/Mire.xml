@@ -1,0 +1,74 @@
+<Playlist name="Mire" mroot="D:\Music\Mire\2017 - A Meaning of love\">
+  <Song file="01 - Envy.flac">
+    <ControlPoint timestamp="0" volume="50" brightness="0">
+      <bin index="0" color="RGBA(0, 32, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="5000" volume="60" brightness="80">
+      <bin index="0" color="RGBA(0, 96, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="20000" volume="70" brightness="85">
+      <bin index="10" color="RGBA(0, 96, 0, 255)"></bin>
+      <bin index="110" color="RGBA(16, 139, 16, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="40000" volume="80" brightness="90">
+      <bin index="10" color="RGBA(16, 139, 16, 255)"></bin>
+      <bin index="110" color="RGBA(85, 107, 47, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="70000" volume="90" brightness="95">
+      <bin index="10" color="RGBA(64, 139, 64, 255)"></bin>
+      <bin index="110" color="RGBA(154, 205, 50, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="100000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(85, 107, 47, 255)"></bin>
+      <bin index="110" color="RGBA(107, 142, 35, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="106500" volume="100" brightness="100">
+      <bin index="10" color="RGBA(85, 107, 47, 255)"></bin>
+      <bin index="110" color="RGBA(107, 142, 35, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="108750" volume="100" brightness="50">
+      <bin index="10" color="RGBA(40, 153, 87, 255)"></bin>
+      <bin index="110" color="RGBA(52, 182, 55, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="109500" volume="100" brightness="100">
+      <bin index="10" color="RGBA(0, 250, 127, 255)"></bin>
+      <bin index="110" color="RGBA(0, 255, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="126000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(102, 205, 170, 255)"></bin>
+      <bin index="110" color="RGBA(60, 179, 113, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="152000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(32, 178, 170, 255)"></bin>
+      <bin index="110" color="RGBA(46, 139, 87, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="162000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(32, 178, 128, 255)"></bin>
+      <bin index="110" color="RGBA(46, 139, 87, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="177000" volume="100" brightness="100">
+      <bin index="0" color="RGBA(64, 180, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="195000" volume="100" brightness="100">
+      <bin index="0" color="RGBA(46, 164, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="210000" volume="100" brightness="75">
+      <bin index="0" color="RGBA(16, 128, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="220000" volume="100" brightness="50">
+      <bin index="0" color="RGBA(0, 96, 22, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="02 - Bind.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
+  <Song file="03 - Slash.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
+  <Song file="04 - Bury.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
+  <Song file="05 - Regret.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
+</Playlist>
