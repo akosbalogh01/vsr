@@ -32,3 +32,6 @@ VSR uses JetBrains MetaProgramming System as the Domain Specific Development Env
 
 ### Demo
 https://www.youtube.com/watch?v=KRuO5h96djY
+
+#### Further reading
+TDK.pdf contains the full project documentation in Hungarian.
