@@ -8,6 +8,7 @@
   ******************************************************************************
 */
 
+// #define LEDTEST
 
 #include "stm32f4xx.h"
 #include "stm32f4xx_nucleo.h"
@@ -18,6 +19,7 @@ int main(void)
 {
 	init_hardware();
 
+#ifdef LEDTEST
 	uint8_t n = 0;
 	while (1) {
 		if (n < 256) {
@@ -30,8 +32,7 @@ int main(void)
 		leds_test(n);
 		HAL_Delay(1000);
 	}
-
-	/*
+#else
 	uartrx = 0;
 
 	while (1) {
@@ -40,5 +41,5 @@ int main(void)
 			leds_tx();
 		}
 	}
-	*/
+#endif
 }
